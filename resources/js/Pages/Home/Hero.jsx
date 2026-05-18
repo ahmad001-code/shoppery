@@ -88,12 +88,12 @@ const Hero = () => {
                                 }}
                                 custom={direction}
                                 initial={{
-                                    x: direction > 0 ? -100 : 100,
+                                    x: direction > 0 ? 100 : -100,
                                     opacity: 0,
                                 }}
                                 animate={{ x: 0, opacity: 1 }}
                                 exit={{
-                                    x: direction > 0 ? 100 : -100,
+                                    x: direction > 0 ? -100 : 100,
                                     opacity: 0,
                                 }}
                                 transition={{ duration: 0.5 }}

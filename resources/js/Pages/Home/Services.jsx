@@ -3,25 +3,25 @@ import { AnimatedSection } from '@/Components/Layout/AnimatedSection';
 const Service = [
     {
         id: 1,
-        src: '/images/Services/Icon1.png',
+        src: '/images/Home/Services/Icon1.png',
         title: 'Free Shipping',
         des: 'Free shipping with discount',
     },
     {
         id: 2,
-        src: '/images/Services/Icon2.png',
+        src: '/images/Home/Services/Icon2.png',
         title: 'Great Support 24/7',
         des: 'Instant access to contact',
     },
     {
         id: 3,
-        src: '/images/Services/Icon3.png',
+        src: '/images/Home/Services/Icon3.png',
         title: '100% Secure Payment',
         des: 'We ensure your money is safe',
     },
     {
         id: 4,
-        src: '/images/Services/Icon4.png',
+        src: '/images/Home/Services/Icon4.png',
         title: 'Money-Back Guarantee',
         des: '30 days money-back guarantee',
     },
@@ -29,24 +29,24 @@ const Service = [
 
 const Services = () => {
     return (
-        <AnimatedSection className="flex justify-center">
-            <section className="container flex justify-center">
-                <div className="flex rounded-[8px] border-[1px] border-[#ccc]">
+        <AnimatedSection className="relative flex justify-center">
+            <section className="container z-10 mx-auto flex justify-center px-4 py-20">
+                <div className="flex rounded-[8px] border-[1px] border-[#ccc] bg-white shadow-lg">
                     {Service.map((item) => {
                         return (
                             <div
                                 key={item.id}
-                                className="flex h-[222px] w-[330px] flex-col gap-3 rounded-[8px] border-r-[1px] border-[#ccc] p-8 hover:bg-[#00B207] hover:text-[#fff]"
+                                className="group flex h-[222px] w-[330px] flex-col gap-3 rounded-[8px] border-r-[1px] border-[#ccc] p-8 hover:bg-[#00B207]"
                             >
                                 <img
                                     className="h-[70px] w-[70px]"
                                     src={item.src}
                                     alt="icon"
                                 />
-                                <h2 className="text-lg font-semibold leading-[150%] tracking-[0%] text-[#1A1A1A]">
+                                <h2 className="text-lg font-semibold leading-[150%] tracking-[0%] text-[#1A1A1A] group-hover:text-white">
                                     {item.title}
                                 </h2>
-                                <p className="text-sm font-medium leading-[150%] tracking-[0%] text-[#808080]">
+                                <p className="text-sm font-medium leading-[150%] tracking-[0%] text-[#808080] group-hover:text-white">
                                     {item.des}
                                 </p>
                             </div>
@@ -54,6 +54,7 @@ const Services = () => {
                     })}
                 </div>
             </section>
+            <div className="absolute bottom-0 z-[-10px] h-[50%] w-full bg-[#EDF2EE]"></div>
         </AnimatedSection>
     );
 };

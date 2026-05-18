@@ -1,6 +1,7 @@
 import MainLayout from '@/Components/Layout/MainLayout';
 import { Head } from '@inertiajs/react';
 import Hero from './Hero';
+import IntroducingProducts from './IntroducingProducts';
 import Services from './Services';
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
             <Head title="Home" />
             <Hero />
             <Services />
+            <IntroducingProducts />
         </MainLayout>
     );
 }
