@@ -1,4 +1,5 @@
 import { AnimatedSection } from '@/Components/Layout/AnimatedSection';
+import ShopNowBtn from './ShopNowBtn';
 
 const Trusted = () => {
     return (
@@ -66,12 +67,9 @@ const Trusted = () => {
                             </p>
                         </div>
                     </div>
-                    <button className="flex h-[51px] w-[192px] items-center justify-center gap-3 rounded-[43px] bg-[#00B207] text-white">
-                        Shop Now{' '}
-                        <div>
-                            <img src="/images/Home/Trusted/arrow.png" alt="" />
-                        </div>
-                    </button>
+                    <div className="w-[192px]">
+                        <ShopNowBtn />
+                    </div>
                 </div>
             </section>
             <div className="absolute left-0 top-6 hidden xl:block">

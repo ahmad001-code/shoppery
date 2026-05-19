@@ -32,11 +32,11 @@ const Services = () => {
         <AnimatedSection className="relative flex justify-center">
             <section className="container z-10 mx-auto flex justify-center px-4 py-20">
                 <div className="flex rounded-[8px] border-[1px] border-[#ccc] bg-white shadow-md">
-                    {Service.map((item) => {
+                    {Service.map((item, index) => {
                         return (
                             <div
                                 key={item.id}
-                                className="group flex h-[222px] w-[330px] flex-col gap-3 rounded-[8px] border-r-[1px] border-[#ccc] p-8 hover:bg-[#00B207]"
+                                className={`${index === 0 ? 'rounded-bl-lg rounded-tl-lg' : ''} ${index === 3 ? 'rounded-br-lg rounded-tr-lg' : ''} group flex h-[222px] w-[330px] flex-col gap-3 ${index < 3 ? 'border-r-[1px] border-[#ccc]' : ''} cursor-pointer p-8 transition-all duration-300 ease-in-out hover:bg-[#00B207]`}
                             >
                                 <img
                                     className="h-[70px] w-[70px]"

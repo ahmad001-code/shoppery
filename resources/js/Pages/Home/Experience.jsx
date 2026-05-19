@@ -59,10 +59,10 @@ const Experience = () => {
         requestAnimationFrame(animate);
     }, [isInView]);
     return (
-        <AnimatedSection className="relative bg-[#001009]">
+        <AnimatedSection className="relative z-10 bg-[#001009]">
             <section
                 ref={ref}
-                className="container mx-auto flex max-w-[1280px] gap-4 px-4 py-20"
+                className="container mx-auto flex flex-wrap justify-center gap-4 px-4 py-20"
             >
                 {exp.map((item, index) => {
                     return (
@@ -71,7 +71,7 @@ const Experience = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.7, delay: index * 0.3 }}
                             key={item.id}
-                            className="flex h-[174px] w-[312px] flex-col items-center justify-center rounded-lg bg-[#FFFFFF12]"
+                            className="relative z-10 flex h-[174px] w-[312px] flex-col items-center justify-center rounded-lg bg-[#FFFFFF12]"
                         >
                             <h1 className="text-[56px] font-light leading-[120%] tracking-[0%] text-[#00B207]">
                                 {animateState[index]}

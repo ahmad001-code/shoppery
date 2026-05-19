@@ -1,6 +1,7 @@
 import { AnimatedSection } from '@/Components/Layout/AnimatedSection';
 import { AnimatePresence, motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
+import ShopNowBtn from './ShopNowBtn';
 
 const Items = [
     {
@@ -133,10 +134,7 @@ const Hero = () => {
 
                         <p className="mb-8 text-gray-600">{currentItem.des}</p>
 
-                        <button className="flex items-center gap-2 rounded-full bg-green-600 px-6 py-3 text-white">
-                            Shop Now{' '}
-                            <img src="/images/Home/shopNow.png" alt="" />
-                        </button>
+                        <ShopNowBtn />
                     </div>
                 </div>
                 <div className="absolute top-[300px] hidden w-full justify-between xl:flex">
