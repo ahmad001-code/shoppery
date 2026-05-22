@@ -1,5 +1,6 @@
 import MainLayout from '@/Components/Layout/MainLayout';
 import { Head } from '@inertiajs/react';
+import BestSellerProducts from './BestSellerProducts';
 import Categories from './Categories';
 import Experience from './Experience';
 import Hero from './Hero';
@@ -20,6 +21,7 @@ export default function Home() {
             <Trusted />
             <Experience />
             <Offers />
+            <BestSellerProducts />
             <NewsPopUp />
         </MainLayout>
     );
