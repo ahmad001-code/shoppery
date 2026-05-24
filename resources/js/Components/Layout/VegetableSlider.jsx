@@ -18,7 +18,10 @@ const images = [
         link: '/images/cabbage4.jpg',
     },
     {
-        link: '/images/cabbage5.jpg',
+        link: '/images/cabbage6.jpg',
+    },
+    {
+        link: '/images/cabbage7.jpg',
     },
 ];
 

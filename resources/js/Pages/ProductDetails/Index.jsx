@@ -6,6 +6,7 @@ import { Head } from '@inertiajs/react';
 import { motion } from 'framer-motion';
 import Counter from './Counter';
 import ProductTabs from './ProductTabs';
+import RelatedCards from './RelatedCards';
 
 function ProductDetails() {
     const stars = [
@@ -15,10 +16,10 @@ function ProductDetails() {
         { link: '/images/star.png' },
     ];
     const medias = [
-        { link: '/images/facebook.png' },
-        { link: '/images/tweeter.png' },
-        { link: '/images/p.png' },
-        { link: '/images/insta.png' },
+        { link: '/images/facebook.svg' },
+        { link: '/images/twitter.svg' },
+        { link: '/images/pinterest.svg' },
+        { link: '/images/insta.svg' },
     ];
 
     return (
@@ -141,7 +142,7 @@ function ProductDetails() {
                             </button>
                             <div className="flex h-[50px] w-[50px] cursor-pointer items-center justify-center rounded-3xl bg-[#20B5261A]">
                                 <motion.img
-                                    className={"h-[20px] w-[20px]"}
+                                    className={'h-[20px] w-[20px]'}
                                     src="/images/heart.png"
                                     alt=""
                                 />
@@ -172,6 +173,12 @@ function ProductDetails() {
                 <div>
                     <ProductTabs />
                 </div>
+            </AnimatedSection>
+            <AnimatedSection className="pt-10">
+                <div className="flex justify-center pb-8 text-[32px] font-semibold">
+                    <h1>Related Products</h1>
+                </div>
+                <RelatedCards />
             </AnimatedSection>
         </MainLayout>
     );
