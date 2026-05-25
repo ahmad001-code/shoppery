@@ -104,14 +104,26 @@ function ProductDetails() {
                                     </button>
                                 </div>
                             </div>
-                            <div className='absolute bottom-10 flex flex-col gap-5 w-full px-6'>
-                                <div className='flex justify-between'>
+                            <div className="absolute bottom-10 flex w-full flex-col gap-5 px-6">
+                                <div className="flex justify-between">
                                     <p>2 Product</p>
-                                    <p className='font-bold'>$26.00</p>
+                                    <p className="font-bold">$26.00</p>
                                 </div>
-                                <div className='flex flex-col gap-2 justify-center items-center'>
-                                    <button className='font-semibold h-[50px] w-[300px] bg-[#00B207] text-white rounded-[43px]'>Checkout</button>
-                                    <button className='font-semibold h-[50px] w-[300px] bg-[#56AC591A] text-[#00B207] rounded-[43px]'>Go To Cart</button>
+                                <div className="flex flex-col items-center justify-center gap-2">
+                                    <motion.button
+                                        whileHover={{ scale: 1.05 }}
+                                        transition={{ duration: 0.3 }}
+                                        className="h-[50px] w-[300px] rounded-[43px] bg-[#00B207] font-semibold text-white sm:w-[350px] lg:w-[300px]"
+                                    >
+                                        Checkout
+                                    </motion.button>
+                                    <motion.button
+                                        whileHover={{ scale: 1.05 }}
+                                        transition={{ duration: 0.3 }}
+                                        className="h-[50px] w-[300px] rounded-[43px] bg-[#56AC591A] font-semibold text-[#00B207] sm:w-[350px] lg:w-[300px]"
+                                    >
+                                        Go To Cart
+                                    </motion.button>
                                 </div>
                             </div>
                         </motion.div>
