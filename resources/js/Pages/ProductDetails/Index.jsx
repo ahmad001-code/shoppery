@@ -291,7 +291,7 @@ function ProductDetails() {
                     <div className="flex justify-center pb-8 text-[32px] font-semibold">
                         <h1>Related Products</h1>
                     </div>
-                    <RelatedCards />
+                    <RelatedCards/>
                 </AnimatedSection>
             </MainLayout>
         </>
