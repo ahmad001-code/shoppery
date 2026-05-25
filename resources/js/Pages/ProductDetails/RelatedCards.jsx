@@ -47,7 +47,7 @@ function RelatedCards() {
         },
     ];
     return (
-        <div className='flex justify-center gap-5'>
+        <div className='grid grid-cols-2 gap-3 md:grid-cols-4 lg:gap-6 mx-8 '>
             {contents.map((content) => (
                 <ProductCard key={content.id} product={content} />
             ))}
