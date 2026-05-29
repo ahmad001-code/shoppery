@@ -12,7 +12,7 @@ const Video = () => {
 
     return (
         <AnimatedSection className="relative">
-            <section className=" relative -mt-11 z-10 px-0 py-20">
+            <section className="lg:w-[700px] relative -mt-11 lg:relative lg:bottom-8 z-10 px-0 py-20">
                 <div className="relative overflow-hidden rounded-[10px]">
                     <video
                         controls
