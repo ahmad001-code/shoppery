@@ -68,7 +68,7 @@ function PageOne() {
 
                   <Video />
                   {/* cards */}
-                     <div className=" rounded-xl -mt-11 border border-[#E5E5E5] px-5 py-6 lg:w-[700px] shadow-md">
+                     <div className=" rounded-xl -mt-11 border lg:relative lg:bottom-9 border-[#E5E5E5] px-5 py-6 lg:w-[700px] shadow-md">
                             <div className="flex flex-col gap-10 sm:flex-row sm:items-center sm:justify-between">
                                 {highlights.map((highlight) => (
                                     <article
