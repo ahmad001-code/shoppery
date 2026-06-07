@@ -31,6 +31,12 @@ Route::get('/about', function () {
 Route::get('/contact', function () {
     return Inertia::render('Contact/Index');
 });
+Route::get('/blogs', function () {
+    return Inertia::render('Blogs/Index');
+});
+Route::get('/blogs/singleBlog', function () {
+    return Inertia::render('Blogs/SingleBlock');
+});
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard/Index');
     })->middleware(['auth', 'verified'])->name('dashboard');
