@@ -212,7 +212,7 @@ export default function About() {
                         <motion.button
                             whileHover={{ scale: 1.05 }}
                             transition={{ duration: 0.3 }}
-                            className="flex h-[50px] w-[190px] items-center justify-center gap-2 rounded-[43px] bg-[#00B207] text-[16px] font-semibold text-white"
+                            className="flex h-[50px] hover:bg-green-600 w-[190px] items-center justify-center gap-2 rounded-[43px] bg-[#00B207] text-[16px] font-semibold text-white"
                         >
                             Shop Now{' '}
                             <img src="/images/victor.png" alt="victor" />
@@ -241,7 +241,7 @@ export default function About() {
                     </div>
                 </div>
                 <div className="mt-10 mb-24 w-full">
-                    <TeamCarts />{' '}
+                    <TeamCarts />
                 </div>
             </AnimatedSection>
             <AnimatedSection className="bg-gray-200">
