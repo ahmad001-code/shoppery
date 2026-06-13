@@ -78,7 +78,7 @@ function VegetableSlider() {
                                 duration: 0.4,
                                 ease: 'easeOut',
                             }}
-                            className="h-[270px] w-full object-cover sm:h-[320px] lg:h-[370px]"
+                            className="h-[270px] w-full  object-cover sm:h-[320px] lg:h-[370px]"
                             src={activeImage.link}
                             alt=""
                         />
