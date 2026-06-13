@@ -127,7 +127,7 @@ export default function About() {
                 </div>
                 <section className="flex w-full justify-center py-10">
                     <div className="w-full">
-                        <div className="relative h-[270px] w-full overflow-hidden rounded-lg bg-[url('/images/background.png')] bg-cover bg-center md:h-[400px] lg:h-[600px] xl:h-[670px]">
+                        <div className="relative h-[270px] w-full overflow-hidden bg-[url('/images/background.png')] bg-cover bg-center md:h-[400px] lg:h-[600px] xl:h-[670px]">
                             <div className="flex h-full justify-around">
                                 <div className="grid grid-cols-2 gap-10">
                                     <div className="">
@@ -182,8 +182,8 @@ export default function About() {
                     </div>
                 </section>
             </AnimatedSection>
-            <AnimatedSection className="flex justify-center">
-                <div className="flex w-full max-w-[1270px] flex-col gap-20 lg:flex-row">
+            <AnimatedSection className="flex justify-center mx-4">
+                <div className="flex w-full max-w-[1250px] flex-col gap-20 xl:flex-row">
                     <div className="flex flex-col gap-4">
                         <div className="flex flex-col gap-4">
                             <h2 className="text-[40px] font-semibold leading-[120%] text-[#1A1A1A] lg:text-[48px]">
@@ -227,7 +227,7 @@ export default function About() {
                     </div>
                 </div>
             </AnimatedSection>
-            <AnimatedSection className="flex justify-center bg-gray-100">
+            <AnimatedSection className="flex flex-col items-center justify-center bg-gray-100">
                 <div className="mx-4 flex flex-col py-10">
                     <div className="flex w-full max-w-[640px] flex-col items-center gap-2">
                         <h1 className="text-center text-[40px] font-semibold leading-[120%] text-[#1A1A1A] lg:text-[48px]">
@@ -239,9 +239,9 @@ export default function About() {
                             eget est luctus tincidunt a a mi.
                         </p>
                     </div>
-                    <div className="mt-10 w-full">
-                        <TeamCarts />{' '}
-                    </div>
+                </div>
+                <div className="mt-10 mb-24 w-full">
+                    <TeamCarts />{' '}
                 </div>
             </AnimatedSection>
             <AnimatedSection className="bg-gray-200">

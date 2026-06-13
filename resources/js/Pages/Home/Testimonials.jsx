@@ -219,7 +219,7 @@ const Testimonials = () => {
                             0: {
                                 slidesPerView: 1,
                             },
-                            640: {
+                            768: {
                                 slidesPerView: 2,
                             },
                             1024: {
@@ -239,7 +239,7 @@ const Testimonials = () => {
                                             delay: (indexof + 0.5) * 0.02,
                                         }}
                                         key={item.id}
-                                        className="flex w-[408px] flex-col gap-5 rounded-lg bg-white p-6"
+                                        className="flex w-full max-w-[408px] flex-col gap-5 rounded-lg bg-white p-6"
                                     >
                                         <img
                                             className="h-[26px] w-8"
