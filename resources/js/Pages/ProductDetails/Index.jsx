@@ -87,16 +87,7 @@ function ProductDetails() {
                                             </p>
                                         </div>
                                     </div>
-                                    <motion.button
-                                        onClick={() => {
-                                            setHidden(true);
-                                            cancel1 = hidden;
-                                            setHidden(false);
-                                        }}
-                                        whileHover={{ scale: 1.2 }}
-                                        transition={{ duration: 0.3 }}
-                                        className="flex h-[24px] w-[24px] items-center justify-center rounded-xl border-[1px] border-gray-300 font-light font-semibold text-[#666666]"
-                                    >
+                                    <motion.button className="flex h-[24px] w-[24px] items-center justify-center rounded-xl border-[1px] border-gray-300 font-light font-semibold text-[#666666]">
                                         X
                                     </motion.button>
                                 </div>
@@ -119,16 +110,7 @@ function ProductDetails() {
                                             </p>
                                         </div>
                                     </div>
-                                    <motion.button
-                                        onClick={() => {
-                                            setHidden(true);
-                                            cancel2 = hidden;
-                                            setHidden(false);
-                                        }}
-                                        whileHover={{ scale: 1.2 }}
-                                        transition={{ duration: 0.3 }}
-                                        className="flex h-[24px] w-[24px] items-center justify-center rounded-xl border-[1px] border-gray-300 font-light font-semibold text-[#666666]"
-                                    >
+                                    <motion.button className="flex h-[24px] w-[24px] items-center justify-center rounded-xl border-[1px] border-gray-300 font-light font-semibold text-[#666666]">
                                         X
                                     </motion.button>
                                 </div>
@@ -179,7 +161,7 @@ function ProductDetails() {
                 ></Breadcrumb>
                 <Head title="ProductDetails"></Head>
                 <AnimatedSection>
-                    <div className="mx-4 grid grid-cols-1 lg:mx-12 lg:grid-cols-2 xl:mx-16 2xl:px-[200px]">
+                    <div className="mx-10 grid grid-cols-1 lg:grid-cols-2 lg:mx-12 xl:mx-16 2xl:px-[200px]">
                         <div className="flex items-center justify-center xl:justify-end">
                             <div>
                                 <VegetableSlider />
