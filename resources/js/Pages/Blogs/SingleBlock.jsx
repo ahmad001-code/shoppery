@@ -35,28 +35,28 @@ const SingleBlock = () => {
                         <div className="flex gap-6">
                             <div className="flex items-center gap-2">
                                 <Tag color="#00B207" />
-                                <p className="text-[14px] font-normal leading-[150%] tracking-[0%]">
+                                <p className="text-[11px] lg:text-[13px] xl:text-[14px] font-normal leading-[150%] tracking-[0%]">
                                     Food
                                 </p>
                             </div>
                             <div className="flex items-center gap-2">
                                 <User color="#00B207" />
-                                <p className="text-[14px] font-normal leading-[150%] tracking-[0%]">
+                                <p className="text-[11px] lg:text-[13px] xl:text-[14px] font-normal leading-[150%] tracking-[0%]">
                                     By Admind
                                 </p>
                             </div>
                             <div className="flex items-center gap-2">
                                 <MessageSquare color="#00B207" />
-                                <p className="text-[14px] font-normal leading-[150%] tracking-[0%]">
+                                <p className="text-[11px] lg:text-[13px] xl:text-[14px] font-normal leading-[150%] tracking-[0%]">
                                     65 Comments
                                 </p>
                             </div>
                         </div>
-                        <h2 className="text-[32px] font-medium leading-[140%] tracking-[0%]">
+                        <h2 className="text-[24px] lg:text-[26px] xl:text-[29px] 2xl:text-[32px] font-medium leading-[140%] tracking-[0%]">
                             Maecenas tempor urna sed quam mollis, a placerat dui
                             fringill Suspendisse.
                         </h2>
-                        <div className="flex justify-between">
+                        <div className="flex flex-col gap-3 lg:flex-row justify-between">
                             <div className="flex items-center gap-2">
                                 <img
                                     src="/images/SingleBlog/profile.png"
@@ -108,7 +108,7 @@ const SingleBlock = () => {
                         </div>
                     </div>
                     <div className="mt-5 flex flex-col gap-5">
-                        <p className="text-[20px] font-medium leading-[150%] tracking-[0%] text-[#1A1A1A]">
+                        <p className="text-[16px] md:text-[18px] lg:text-[20px] font-medium leading-[150%] tracking-[0%] text-[#1A1A1A]">
                             Maecenas lacinia felis nec placerat sollicitudin.
                             Quisque placerat dolor at scelerisque imperdiet.
                             Phasellus tristique felis dolor.
@@ -133,7 +133,7 @@ const SingleBlock = () => {
                             ridiculus mus.
                         </p>
                     </div>
-                    <div className="flex justify-between">
+                    <div className="flex flex-wrap gap-3 justify-between">
                         <img src="/images/SingleBlog/fruit1.png" alt="" />
                         <img src="/images/SingleBlog/fruit2.png" alt="" />
                     </div>
@@ -147,7 +147,7 @@ const SingleBlock = () => {
                         nibh ipsum, eget lacinia eros pulvinar a. Integer
                         accumsan arcu nec faucibus ultricies.
                     </p>
-                    <div className="flex h-[250px] w-full items-center bg-[url(/images/SingleBlog/rec.png)] px-12">
+                    <div className="flex h-[250px] min-w-full rounded-[6px] items-center bg-[url(/images/SingleBlog/rec.png)] px-12">
                         <div className="flex items-center gap-16">
                             <div className="flex flex-col gap-2">
                                 <p className="text-[14px] font-medium leading-[100%] tracking-[3%] text-[#666666]">
