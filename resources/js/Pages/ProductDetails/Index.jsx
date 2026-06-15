@@ -85,7 +85,11 @@ function ProductDetails() {
                                             </p>
                                         </div>
                                     </div>
-                                    <motion.button className="flex h-[24px] w-[24px] items-center justify-center rounded-xl border-[1px] border-gray-300 font-semibold text-[#666666]">
+                                    <motion.button
+                                        whileHover={{ scale: 1.2 }}
+                                        transition={{ duration: 0.3 }}
+                                        className="flex h-[24px] w-[24px] items-center justify-center rounded-xl border-[1px] border-gray-300 font-light font-semibold text-[#666666]"
+                                    >
                                         X
                                     </motion.button>
                                 </div>
