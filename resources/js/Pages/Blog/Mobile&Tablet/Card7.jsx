@@ -6,7 +6,7 @@ const Card7 = () => {
             <div className="m-4 flex h-[clamp(130px,25vw,500px)] w-[clamp(330px,93vw,1500px)] justify-start gap-3 rounded-lg border bg-white shadow-md sm:h-[clamp(130px,25vw,500px)]">
                 <div className="flex justify-start rounded-lg ">
                     <img
-                        src="/images/orangc.png"
+                        src="/images/carts/orangs.png"
                         className="w-[180px] rounded-s-lg object-cover sm:w-[210px] md:w-[clamp(250px,60vw,330px)]"
                         alt="photo"
                     />
