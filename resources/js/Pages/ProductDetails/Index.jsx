@@ -68,9 +68,7 @@ function ProductDetails() {
                                         x
                                     </motion.button>
                                 </div>
-                                <div
-                                    className={`flex items-center justify-between pb-2 ${cancel1 === hidden ? `hidden` : ``}`}
-                                >
+                                <div className="flex items-center justify-between pb-2">
                                     <div className="flex items-center">
                                         <img
                                             className="h-[100px] w-[120px]"
@@ -87,7 +85,7 @@ function ProductDetails() {
                                             </p>
                                         </div>
                                     </div>
-                                    <motion.button className="flex h-[24px] w-[24px] items-center justify-center rounded-xl border-[1px] border-gray-300 font-light font-semibold text-[#666666]">
+                                    <motion.button className="flex h-[24px] w-[24px] items-center justify-center rounded-xl border-[1px] border-gray-300 font-semibold text-[#666666]">
                                         X
                                     </motion.button>
                                 </div>
@@ -161,7 +159,7 @@ function ProductDetails() {
                 ></Breadcrumb>
                 <Head title="ProductDetails"></Head>
                 <AnimatedSection>
-                    <div className="mx-10 grid grid-cols-1 lg:grid-cols-2 lg:mx-12 xl:mx-16 2xl:px-[200px]">
+                    <div className="mx-10 grid grid-cols-1 lg:mx-12 lg:grid-cols-2 xl:mx-16 2xl:px-[200px]">
                         <div className="flex items-center justify-center xl:justify-end">
                             <div>
                                 <VegetableSlider />
@@ -252,7 +250,7 @@ function ProductDetails() {
                                     onClick={() => setShowPopup(true)}
                                     whileHover={{ scale: 1.05 }}
                                     transition={{ duration: 0.3 }}
-                                    className="flex h-[50px]  w-[190px] sm:w-[250px] lg:w-[300px] items-center justify-center gap-3 rounded-3xl bg-[#00B207] text-white"
+                                    className="flex h-[50px] w-[190px] items-center justify-center gap-3 rounded-3xl bg-[#00B207] text-white sm:w-[250px] lg:w-[300px]"
                                 >
                                     Add to Cart
                                     <img
@@ -292,7 +290,7 @@ function ProductDetails() {
                     </div>
                 </AnimatedSection>
                 <AnimatedSection>
-                    <div className='mx-4'>
+                    <div className="mx-4">
                         <ProductTabs />
                     </div>
                 </AnimatedSection>
