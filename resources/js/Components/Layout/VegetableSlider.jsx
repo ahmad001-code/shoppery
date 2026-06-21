@@ -49,7 +49,7 @@ function VegetableSlider() {
                             <SwiperSlide key={index}>
                                 <div
                                     onClick={() => setActiveImage(image)}
-                                    className={`transation flex cursor-pointer items-center justify-center rounded-lg border p-2 transition-all duration-300 hover:border-green-500 ${
+                                    className={`flex cursor-pointer items-center justify-center rounded-lg border p-2 transition-all duration-300 hover:border-green-500 ${
                                         activeImage === image
                                             ? 'border-green-500'
                                             : 'border-gray-200'

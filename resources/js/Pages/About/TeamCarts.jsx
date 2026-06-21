@@ -40,10 +40,8 @@ function TeamCarts() {
     return (
         <>
             <div className="mx-auto flex max-w-[1420px] items-center justify-center gap-4 px-4">
-                {' '}
                 <button className="team-prev flex h-[46px] w-[46px] items-center justify-center rounded-[23px] border bg-white shadow transition duration-300 hover:bg-green-600 hover:text-white">
-                    {' '}
-                    <ArrowLeftIcon className="h-5 w-5" />{' '}
+                    <ArrowLeftIcon className="h-5 w-5" />
                 </button>
                 <div></div>
                 <Swiper
@@ -118,7 +116,6 @@ function TeamCarts() {
                     ))}
                 </Swiper>
                 <button className="team-next flex h-[46px] w-[46px] items-center justify-center rounded-[23px] border bg-white shadow transition duration-300 hover:bg-green-600 hover:text-white">
-                    {' '}
                     <ArrowRightIcon className="h-5 w-5" />
                 </button>
             </div>
