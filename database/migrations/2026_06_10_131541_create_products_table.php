@@ -23,7 +23,7 @@ return new class extends Migration
             $table->decimal('weight', 10, 2);
             $table->string('unit');
             $table->decimal('price', 12, 2);
-            $table->decimal('discount', 3,2)->nullable();
+            $table->decimal('discount', 2,2)->nullable();
             $table->decimal('rating', 10, 2)->nullable();
             $table->boolean('is_hot_deal')->default(false);
             $table->boolean('is_featured')->default(false);
