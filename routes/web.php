@@ -16,6 +16,10 @@ Route::get('/cart', function () {
     return Inertia::render('Cart/Index');
 });
 
+Route::get('/blogs', function () {
+    return inertia::render('Blog/Index');
+});
+
 Route::get('/wishlist', function () {
     return Inertia::render('Wishlist/Index');
 });
@@ -32,9 +36,19 @@ Route::get('/about', function () {
 Route::get('/contact', function () {
     return Inertia::render('Contact/Index');
 });
+Route::get('/orders', function () {
+    return Inertia::render('OrderHistory/Index');
+});
+Route::get('/order-details', function () {
+    return Inertia::render('OrderHistory/OrderDetails');
+});
+Route::get('/settings', function () {
+    return Inertia::render('Account/Settings');
+});
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard/Index');
     })->middleware(['auth', 'verified'])->name('dashboard');
+
 
     Route::middleware('auth')->group(function () {
         Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
