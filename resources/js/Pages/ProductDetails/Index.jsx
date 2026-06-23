@@ -9,7 +9,7 @@ import Counter from './Counter';
 import ProductTabs from './ProductTabs';
 import RelatedCards from './RelatedCards';
 
-function ProductDetails() {
+function ProductDetails({ product = [] }) {
     const stars = [
         { link: '/images/star.png' },
         { link: '/images/star.png' },
@@ -23,7 +23,7 @@ function ProductDetails() {
         { link: '/images/insta.svg' },
     ];
     const [showPopup, setShowPopup] = useState(false);
-
+    console.log(product);
     return (
         <>
             <AnimatePresence>
@@ -255,8 +255,7 @@ function ProductDetails() {
                                 >
                                     Add to Cart
                                     <img
-                                        className="h-4"
-                                        w-4
+                                        className="h-4 w-4"
                                         src="/images/add.png"
                                         alt=""
                                     />
