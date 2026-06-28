@@ -4,6 +4,7 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\WishlistController;
 
 Route::get('/', function () {
     return Inertia::render('Home/Index');
@@ -49,6 +50,9 @@ Route::get('/order-details', function () {
 Route::get('/settings', function () {
     return Inertia::render('Account/Settings');
 });
+
+Route::post('/wishlist', [WishlistController::class, 'store']);
+
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard/Index');
     })->middleware(['auth', 'verified'])->name('dashboard');
